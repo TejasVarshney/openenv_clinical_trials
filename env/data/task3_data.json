@@ -1,0 +1,213 @@
+{
+  "task_id": "task3_hard_incomplete_data",
+  "description": "Hard task with incomplete EHR notes requiring request_lab before safe enrollment.",
+  "trials": [
+    {
+      "trial_id": "TRIAL_E",
+      "inclusion_criteria": "Type 2 Diabetes with HbA1c < 7.5%.",
+      "exclusion_criteria": "History of diabetic ketoacidosis in the last 12 months."
+    },
+    {
+      "trial_id": "TRIAL_F",
+      "inclusion_criteria": "CKD stage 2-3 with eGFR >= 60.",
+      "exclusion_criteria": "Dialysis dependence."
+    },
+    {
+      "trial_id": "TRIAL_G",
+      "inclusion_criteria": "Hyperlipidemia with LDL >= 130 mg/dL.",
+      "exclusion_criteria": "ALT or AST > 120 U/L."
+    },
+    {
+      "trial_id": "TRIAL_H",
+      "inclusion_criteria": "Thyroid follow-up with TSH between 0.5 and 5.0 mIU/L.",
+      "exclusion_criteria": "Untreated atrial fibrillation."
+    },
+    {
+      "trial_id": "TRIAL_I",
+      "inclusion_criteria": "Supportive oncology care with platelet > 150000 and ANC > 1500.",
+      "exclusion_criteria": "Active systemic infection."
+    }
+  ],
+  "patients": [
+    {
+      "patient_id": "T3P001",
+      "ehr": "Type 2 Diabetes on metformin. HbA1c pending. No DKA history.",
+      "hidden_labs": {"HbA1c": "7.1%"},
+      "required_labs": ["HbA1c"]
+    },
+    {
+      "patient_id": "T3P002",
+      "ehr": "Type 2 Diabetes on metformin. HbA1c pending. No ketoacidosis in chart.",
+      "hidden_labs": {"HbA1c": "8.2%"},
+      "required_labs": ["HbA1c"]
+    },
+    {
+      "patient_id": "T3P003",
+      "ehr": "CKD stage 3, creatinine stable, eGFR pending. Not on dialysis.",
+      "hidden_labs": {"eGFR": "64"},
+      "required_labs": ["eGFR"]
+    },
+    {
+      "patient_id": "T3P004",
+      "ehr": "CKD stage 3 with dialysis three times weekly. eGFR pending.",
+      "hidden_labs": {"eGFR": "58"},
+      "required_labs": ["eGFR"]
+    },
+    {
+      "patient_id": "T3P005",
+      "ehr": "Hyperlipidemia with LDL pending, AST pending, ALT pending.",
+      "hidden_labs": {"LDL": "172", "AST": "32", "ALT": "28"},
+      "required_labs": ["LDL", "AST", "ALT"]
+    },
+    {
+      "patient_id": "T3P006",
+      "ehr": "Hyperlipidemia with LDL pending and liver enzymes pending.",
+      "hidden_labs": {"LDL": "168", "AST": "44", "ALT": "180"},
+      "required_labs": ["LDL", "AST", "ALT"]
+    },
+    {
+      "patient_id": "T3P007",
+      "ehr": "Hypothyroidism on levothyroxine. TSH pending. No arrhythmia reported.",
+      "hidden_labs": {"TSH": "2.1"},
+      "required_labs": ["TSH"]
+    },
+    {
+      "patient_id": "T3P008",
+      "ehr": "Hypothyroidism with untreated atrial fibrillation. TSH pending.",
+      "hidden_labs": {"TSH": "1.9"},
+      "required_labs": ["TSH"]
+    },
+    {
+      "patient_id": "T3P009",
+      "ehr": "Metastatic colon cancer supportive care. Platelet pending. ANC pending. Afebrile.",
+      "hidden_labs": {"Platelet": "190000", "ANC": "2100"},
+      "required_labs": ["Platelet", "ANC"]
+    },
+    {
+      "patient_id": "T3P010",
+      "ehr": "Oncology supportive consult. Platelet pending, ANC pending, active bacteremia documented.",
+      "hidden_labs": {"Platelet": "205000", "ANC": "2300"},
+      "required_labs": ["Platelet", "ANC"]
+    },
+    {
+      "patient_id": "T3P011",
+      "ehr": "Type 2 Diabetes on oral therapy. HbA1c pending. No DKA events.",
+      "hidden_labs": {"HbA1c": "6.9%"},
+      "required_labs": ["HbA1c"]
+    },
+    {
+      "patient_id": "T3P012",
+      "ehr": "Type 2 Diabetes with DKA admission 2 months ago. HbA1c pending.",
+      "hidden_labs": {"HbA1c": "7.0%"},
+      "required_labs": ["HbA1c"]
+    },
+    {
+      "patient_id": "T3P013",
+      "ehr": "CKD stage 3 candidate, eGFR pending, no dialysis requirement.",
+      "hidden_labs": {"eGFR": "72"},
+      "required_labs": ["eGFR"]
+    },
+    {
+      "patient_id": "T3P014",
+      "ehr": "CKD stage 2 but currently on chronic hemodialysis. eGFR pending.",
+      "hidden_labs": {"eGFR": "69"},
+      "required_labs": ["eGFR"]
+    },
+    {
+      "patient_id": "T3P015",
+      "ehr": "Hyperlipidemia with LDL pending and transaminases pending.",
+      "hidden_labs": {"LDL": "145", "AST": "30", "ALT": "35"},
+      "required_labs": ["LDL", "AST", "ALT"]
+    },
+    {
+      "patient_id": "T3P016",
+      "ehr": "Hyperlipidemia workup; LDL pending, AST pending, ALT pending.",
+      "hidden_labs": {"LDL": "128", "AST": "29", "ALT": "33"},
+      "required_labs": ["LDL", "AST", "ALT"]
+    },
+    {
+      "patient_id": "T3P017",
+      "ehr": "Hypothyroidism follow-up, TSH pending, rhythm stable.",
+      "hidden_labs": {"TSH": "4.1"},
+      "required_labs": ["TSH"]
+    },
+    {
+      "patient_id": "T3P018",
+      "ehr": "Hypothyroidism follow-up with TSH pending. No arrhythmia.",
+      "hidden_labs": {"TSH": "6.8"},
+      "required_labs": ["TSH"]
+    },
+    {
+      "patient_id": "T3P019",
+      "ehr": "Oncology supportive candidate. Platelet pending. ANC pending. No infection signs.",
+      "hidden_labs": {"Platelet": "220000", "ANC": "1800"},
+      "required_labs": ["Platelet", "ANC"]
+    },
+    {
+      "patient_id": "T3P020",
+      "ehr": "Oncology supportive candidate. Platelet pending. ANC pending. No fever.",
+      "hidden_labs": {"Platelet": "120000", "ANC": "1900"},
+      "required_labs": ["Platelet", "ANC"]
+    },
+    {
+      "patient_id": "T3P021",
+      "ehr": "Type 2 Diabetes with HbA1c 7.2% and no DKA history.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P022",
+      "ehr": "CKD stage 3, eGFR 66, not on dialysis.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P023",
+      "ehr": "Hyperlipidemia with LDL 176, AST 34, ALT 32.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P024",
+      "ehr": "Hypothyroidism with TSH 2.8 and untreated atrial fibrillation.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P025",
+      "ehr": "Oncology supportive care patient with platelet 180000, ANC 1700, no active infection.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P026",
+      "ehr": "Type 2 Diabetes with HbA1c 8.0% and no DKA history.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P027",
+      "ehr": "CKD stage 3, eGFR 54, not on dialysis.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P028",
+      "ehr": "Hyperlipidemia with LDL 160, AST 132, ALT 140.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P029",
+      "ehr": "Hypothyroidism with TSH 1.7 and no atrial fibrillation.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T3P030",
+      "ehr": "Oncology supportive candidate with platelet 210000, ANC 2200, active sepsis.",
+      "hidden_labs": {},
+      "required_labs": []
+    }
+  ]
+}

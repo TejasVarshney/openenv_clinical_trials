@@ -1,0 +1,73 @@
+{
+  "task_id": "task1_easy_explicit",
+  "description": "Easy task with explicit terminology overlap between EHR text and protocol criteria.",
+  "trials": [
+    {
+      "trial_id": "TRIAL_A",
+      "inclusion_criteria": "Adults 40-75 years with Type 2 Diabetes and HbA1c < 8.5%.",
+      "exclusion_criteria": "Asthma, CKD Stage 4, or active COPD exacerbation."
+    }
+  ],
+  "patients": [
+    {
+      "patient_id": "T1P001",
+      "ehr": "Age 52. Type 2 Diabetes on metformin. HbA1c 7.4%. No Asthma. No CKD Stage 4.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P002",
+      "ehr": "Age 49. Type 2 Diabetes. HbA1c 7.8%. Past medical history includes Asthma with inhaler use.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P003",
+      "ehr": "Age 61. Type 2 Diabetes. HbA1c 7.2%. CKD Stage 4 documented by nephrology.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P004",
+      "ehr": "Age 58. Type 2 Diabetes on metformin. HbA1c 8.1%. No Asthma or CKD Stage 4.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P005",
+      "ehr": "Age 45. Type 2 Diabetes. HbA1c 7.0%. Frequent wheeze; diagnosed Asthma.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P006",
+      "ehr": "Age 64. Type 2 Diabetes. HbA1c 6.9%. No Asthma, no CKD Stage 4.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P007",
+      "ehr": "Age 67. Type 2 Diabetes. HbA1c 8.3%. Kidney disease progressed to CKD Stage 4.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P008",
+      "ehr": "Age 50. Type 2 Diabetes controlled on oral therapy. HbA1c 7.6%. Exclusions denied.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P009",
+      "ehr": "Age 54. Type 2 Diabetes. HbA1c 7.5%. Asthma with nighttime symptoms.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T1P010",
+      "ehr": "Age 72. Type 2 Diabetes and HbA1c 8.2%. No Asthma. No CKD Stage 4.",
+      "hidden_labs": {},
+      "required_labs": []
+    }
+  ]
+}

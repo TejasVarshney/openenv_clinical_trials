@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinical-trial-matcher"
+version = "0.1.0"
+description = "OpenEnv Clinical Trial Patient Matcher environment"
+requires-python = ">=3.10"
+dependencies = [
+  "openenv-core[core]>=0.2.3",
+  "openai>=2.7.2",
+  "pydantic>=2.10.0",
+  "fastapi>=0.115.0",
+  "uvicorn>=0.30.0"
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[tool.setuptools]
+packages = ["env", "server"]

@@ -1,0 +1,143 @@
+{
+  "task_id": "task2_medium_ontology",
+  "description": "Medium task requiring ontology-level inference from medications and proxies.",
+  "trials": [
+    {
+      "trial_id": "TRIAL_B",
+      "inclusion_criteria": "Hypertension with persistent BP >= 140/90 or active antihypertensive therapy.",
+      "exclusion_criteria": "Pregnancy or symptomatic heart failure."
+    },
+    {
+      "trial_id": "TRIAL_C",
+      "inclusion_criteria": "Type 2 Diabetes with HbA1c >= 7.0 and oral anti-diabetic treatment.",
+      "exclusion_criteria": "eGFR < 45 mL/min/1.73m2."
+    },
+    {
+      "trial_id": "TRIAL_D",
+      "inclusion_criteria": "Hyperlipidemia with LDL >= 160 mg/dL or current statin escalation.",
+      "exclusion_criteria": "Active liver disease or ALT > 120 U/L."
+    }
+  ],
+  "patients": [
+    {
+      "patient_id": "T2P001",
+      "ehr": "BP 152/96 mmHg, currently on lisinopril 20 mg. No heart failure symptoms.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P002",
+      "ehr": "Type 2 Diabetes on metformin. HbA1c 8.1%. eGFR 72.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P003",
+      "ehr": "LDL 184 mg/dL. Atorvastatin increased last month. LFTs normal.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P004",
+      "ehr": "Pregnant at 14 weeks with BP 150/95 on labetalol.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P005",
+      "ehr": "Type 2 Diabetes on metformin. HbA1c 8.4%. eGFR 38.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P006",
+      "ehr": "LDL 171 mg/dL despite rosuvastatin. ALT 29.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P007",
+      "ehr": "Amlodipine 10 mg daily. Clinic BP 148/92 mmHg.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P008",
+      "ehr": "Type 2 Diabetes on metformin + glipizide. HbA1c 7.9%. eGFR 68.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P009",
+      "ehr": "LDL 168 mg/dL, active hepatitis, ALT 220.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P010",
+      "ehr": "Valsartan for BP 160/100. NYHA III heart failure documented.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P011",
+      "ehr": "Losartan 50 mg. Repeated BP 155/94 mmHg. No pregnancy.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P012",
+      "ehr": "Type 2 Diabetes, metformin adherence confirmed. HbA1c 8.3%. eGFR 65.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P013",
+      "ehr": "LDL 172 mg/dL. No active liver disease. ALT 34.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P014",
+      "ehr": "Type 2 Diabetes with metformin. HbA1c 8.0%. CKD Stage 4, eGFR 28.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P015",
+      "ehr": "Persistent BP 149/91 over 3 visits. Not pregnant. No heart failure.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P016",
+      "ehr": "Hyperlipidemia with LDL 188 mg/dL. Atorvastatin uptitrated. ALT 32.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P017",
+      "ehr": "Type 2 Diabetes on metformin. HbA1c 7.8%. eGFR 79.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P018",
+      "ehr": "Pregnant at 10 weeks with Type 2 Diabetes and BP 144/92.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P019",
+      "ehr": "BP 151/90 on carvedilol. Decompensated heart failure last month.",
+      "hidden_labs": {},
+      "required_labs": []
+    },
+    {
+      "patient_id": "T2P020",
+      "ehr": "LDL 165 mg/dL on statin therapy. Liver panel within normal range.",
+      "hidden_labs": {},
+      "required_labs": []
+    }
+  ]
+}
